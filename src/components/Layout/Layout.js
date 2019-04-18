@@ -1,10 +1,12 @@
 import React from 'react'
 import Auxilary from '../../hoc/Auxilary'
 import classes from './Layout.css'
+import Toolbar from '../Navigation/Toolbar/Toolbar'
 
 const layout = (props) => {
     return (
     <Auxilary>
+        <Toolbar />
     <main className={classes.Content}>
         {props.children}
     </main>
